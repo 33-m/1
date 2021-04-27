@@ -1,0 +1,7 @@
+s=list(map(int,input().split()))
+s.sort()
+x=dict()
+for i in s:
+    x[i]=x.get(i,0)+1
+for j in sorted(x):
+    print(j,x[j],sep='\t')
